@@ -2,9 +2,9 @@
     let pageName="Video Page";
 </script>
 
-<main>
+<section>
     <p>Welcome, this is my <b>{pageName}</b></p>
-</main>
+</section>
 
 <style>
 </style>

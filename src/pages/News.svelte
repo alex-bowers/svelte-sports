@@ -5,7 +5,7 @@
     let pageName:string = "News Page"
 </script>
 
-<main>
+<section>
     <h2>{pageName}</h2>
 
     {#await $news}
@@ -19,7 +19,7 @@
         {/each}
     </div>
     {/await}
-</main>
+</section>
 
 <style>
     .news {

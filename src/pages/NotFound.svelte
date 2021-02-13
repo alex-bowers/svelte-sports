@@ -2,9 +2,9 @@
     let pageName="Page Not Found";
 </script>
 
-<main>
+<section>
     <h2>{pageName}</h2>
-</main>
+</section>
 
 <style>
 </style>
