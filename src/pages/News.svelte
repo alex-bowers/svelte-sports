@@ -1,14 +1,12 @@
 <script lang="ts">
     import Article from "../components/Article.svelte"
-    import { news } from "../store"
-
-    let pageName:string = "News Page"
+    import { articles } from "../store"
 </script>
 
 <section>
-    <h2>{pageName}</h2>
+    <h2>News</h2>
 
-    {#await $news}
+    {#await $articles}
         <div>Loading news articles...</div>
     {:then result}
     <div class="news">

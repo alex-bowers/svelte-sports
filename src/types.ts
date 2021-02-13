@@ -1,15 +1,26 @@
 export interface iArticle {
-    author: string | null,
-    content: string | null,
-    description: string | null,
+    author: string,
+    content: string,
+    description: string,
     publishedAt: string,
-    source: iArticleSource,
+    source: iSource,
     title: string,
     url: string,
-    urlToImage: string | null
+    urlToImage: string
 }
 
-export interface iArticleSource {
+export interface iVideo {
+    author: null,
+    content: null,
+    description: null,
+    publishedAt: string,
+    source: iSource,
+    title: string,
+    url: string,
+    urlToImage: null
+}
+
+export interface iSource {
     id: string | null,
     name: string
 }

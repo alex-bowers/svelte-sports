@@ -4,7 +4,7 @@
 	import { onMount } from 'svelte'
 
 	import routes from './routes'
-	import { hello, news } from "./store"
+	import { news } from "./store"
 	import testData from "./test-data.js"
 
 	onMount(async () => {
@@ -26,11 +26,10 @@
 			news.set(testData.news)
 		}
 	}
-	}
 </script>
 
 <main>
-	<h1>{$hello}</h1>
+	<h1>SPORTS</h1>
 	<nav>
 		<ul>
 			<li><a href="#/">Home</a></li>
