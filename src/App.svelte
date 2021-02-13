@@ -5,6 +5,7 @@
 
 	import routes from './routes'
 	import { hello, news } from "./store"
+	import testData from "./test-data.js"
 
 	onMount(async () => {
 		await getNewsArticles()
@@ -13,12 +14,18 @@
 	function getNewsArticles() {
 		const url = `${process.env.NEWS_URL}${process.env.NEWS_KEY}`
 
+		// To save requests on the API, we can use some test data in development.
+		if (process.env.isProd) {
 		axios.get(url)
 			.then(function (response) {
 				news.set(response.data.articles)
 			}).catch(function () {
 				news.set([])
-			});
+				})
+		} else {
+			news.set(testData.news)
+		}
+	}
 	}
 </script>
 
