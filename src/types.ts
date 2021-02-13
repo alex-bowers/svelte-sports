@@ -1,15 +1,15 @@
 export interface iArticle {
-    auth: string,
-    content: string,
-    description: string,
-    published_At: string,
+    author: string | null,
+    content: string | null,
+    description: string | null,
+    publishedAt: string,
     source: iArticleSource,
     title: string,
     url: string,
-    urlToImage: string
+    urlToImage: string | null
 }
 
 export interface iArticleSource {
-    id: number | null,
+    id: string | null,
     name: string
 }
