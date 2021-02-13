@@ -1,5 +1,5 @@
 <script>
-    let pageName="Home Page";
+    let pageName="Home Page"
 </script>
 
 <section>

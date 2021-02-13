@@ -1,5 +1,5 @@
 <script>
-    let pageName="Video Page";
+    let pageName="Video Page"
 </script>
 
 <section>

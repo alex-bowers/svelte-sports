@@ -1,5 +1,5 @@
 <script>
-    let pageName="Page Not Found";
+    let pageName="Page Not Found"
 </script>
 
 <section>
