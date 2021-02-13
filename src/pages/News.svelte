@@ -1,5 +1,6 @@
 <script lang="ts">
     import Article from "../components/Article.svelte"
+
     import { articles } from "../store"
 </script>
 

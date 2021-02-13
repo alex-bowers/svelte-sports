@@ -1,5 +1,6 @@
 <script lang="ts">
     import Highlight from "../components/Highlight.svelte"
+
     import { videos } from "../store"
 </script>
 
