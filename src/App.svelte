@@ -11,7 +11,7 @@
 	});
 
 	function getNewsArticles() {
-		const url = "http://newsapi.org/v2/top-headlines?country=us&category=sport&apiKey=57dd4024934a45518eca3e2912819601"
+		const url = `${process.env.NEWS_URL}${process.env.NEWS_KEY}`
 
 		axios.get(url)
 			.then(function (response) {
