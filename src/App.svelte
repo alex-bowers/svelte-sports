@@ -1,5 +1,5 @@
 <script lang="ts">
-	import axios from "axios"
+	import axios, { AxiosResponse } from "axios"
 	import Router from 'svelte-spa-router'
 	import { onMount } from 'svelte'
 
@@ -12,16 +12,16 @@
 	});
 
 	function getNewsArticles() {
-		const url = `${process.env.NEWS_URL}${process.env.NEWS_KEY}`
+		const url: string = `${process.env.NEWS_URL}${process.env.NEWS_KEY}`
 
 		// To save requests on the API, we can use some test data in development.
 		if (process.env.isProd) {
-		axios.get(url)
-			.then(function (response) {
-				news.set(response.data.articles)
-			}).catch(function () {
-				news.set([])
-				})
+			axios.get(url)
+				.then(function (response: AxiosResponse) {
+					news.set(response.data.articles)
+				}).catch(function () {
+					news.set([])
+			})
 		} else {
 			news.set(testData.news)
 		}

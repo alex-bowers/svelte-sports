@@ -1,15 +1,20 @@
-import { derived, writable, Writable } from 'svelte/store'
+import {
+	derived,
+	Readable,
+	writable,
+	Writable
+} from 'svelte/store'
 
-import type { iArticle, iVideo } from './types'
+import type { IArticle } from './types'
 
-export const news: Writable<iArticle[] | iVideo[]> = writable([])
+export const news: Writable<IArticle[]> = writable([])
 
-export const articles = derived(
+export const articles: Readable<IArticle[]> = derived(
 	news,
 	$article => $article.filter(item => item.content)
 );
 
-export const videos = derived(
+export const videos: Readable<IArticle[]> = derived(
 	news,
 	$article => $article.filter(
         item => !item.content && item.title.toLowerCase().includes('highlights')

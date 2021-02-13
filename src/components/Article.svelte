@@ -1,7 +1,7 @@
 <script lang="ts">
-    import type { iArticle } from "../types"
+    import type { IArticle } from "../types"
 
-    export let report: iArticle
+    export let report: IArticle
 </script>
 
 {#if report}
