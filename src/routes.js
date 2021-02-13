@@ -11,7 +11,7 @@ export default {
 	'/news': News,
 
 	// Wildcard parameter
-	'/Videos': Videos,
+	'/videos': Videos,
 
 	// Catch-all
 	// This is optional, but if present it must be the last
