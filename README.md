@@ -1,14 +1,14 @@
 # Svelte Sports App
 
-This is a test project to introduce [myself](https://github.com/alex-bowers) to Svelte.
+This is a test project to introduce [myself](https://github.com/alex-bowers) to Svelte. I have not included a lot of styles or any tests.
 
-I have not included a lot of styles or any tests. This app was all about learning what Svelte can do.
+The app pulls articles from an API and then displays them.
 
 ## Screenshots
 
 **Mobile**
 
-[![Image from Gyazo](https://i.gyazo.com/86dc08bff1d1eedd0b079a0e01de796f.png)](https://gyazo.com/86dc08bff1d1eedd0b079a0e01de796f)
+<img src="https://i.gyazo.com/86dc08bff1d1eedd0b079a0e01de796f.png" data-canonical-src="https://i.gyazo.com/86dc08bff1d1eedd0b079a0e01de796f.png" height="500" />
 
 **Desktop**
 
