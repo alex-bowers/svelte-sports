@@ -13,7 +13,9 @@
     <div class="news">
     {#each result as video, i}
         <article class="news__article">
-            <Highlight video={video}/>
+            <ul>
+                <Highlight video={video}/>
+            </ul>
         </article>
         {/each}
     </div>
@@ -22,15 +24,6 @@
 
 <style>
     .news {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .news__article {
-        border: 5px solid black;
-        margin: 1rem;
-        max-width: 400px;
-        padding: 1rem;
+        text-align: left;
     }
 </style>

@@ -1,14 +1,19 @@
 <script lang="ts">
-    import type { iVideo } from "../types"
+    import type { IArticle } from "../types"
 
-    export let video: iVideo
+    export let video: IArticle
 </script>
 
 {#if video}
-    <a href="{video.url}">
-        <h3>{video.title}</h3>
-    </a>
+    <li>
+        <a href="{video.url}">
+            {video.title}
+        </a>
+    </li>
 {/if}
 
 <style>
+    a {
+        color: black;
+    }
 </style>
