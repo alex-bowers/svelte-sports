@@ -29,23 +29,28 @@
 </script>
 
 <main>
-	<h1>SPORTS</h1>
-	<nav>
-		<ul>
-			<li><a href="#/">Home</a></li>
-			<li><a href="#/news">News</a></li>
-			<li><a href="#/videos">Videos</a></li>
-		</ul>
-	</nav>
+	<div class="header">
+		<h1>SVELTE SPORTS</h1>
+		<nav>
+			<ul>
+				<li><a href="#/">Home</a></li>
+				<li><a href="#/news">News</a></li>
+				<li><a href="#/videos">Videos</a></li>
+			</ul>
+		</nav>
+	</div>
 
 	<Router {routes}/>
 </main>
 
 <style>
 	main {
-		text-align: center;
-		padding: 1em;
-		margin: 0 auto;
+		padding: 1rem;
+	}
+
+	.header {
+		border-bottom: 1px solid lightgrey;
+		margin-bottom: 3rem;
 	}
 
 	h1 {
@@ -53,5 +58,40 @@
 		text-transform: uppercase;
 		font-size: 4em;
 		font-weight: 100;
+		margin: 0;
+	}
+
+	nav ul {
+		list-style: none;
+		padding-inline-start: 0;
+	}
+
+
+	nav li {
+		display: inline;
+	}
+
+	nav li a {
+		color: black;
+	}
+
+	li + li {
+		padding-left: 1rem;
+	}
+
+	@media (min-width: 1024px) {
+		main {
+			padding: 2rem 5rem;
+		}
+
+		.header {
+			display: flex;
+			align-items: baseline;
+			margin-bottom: 5rem;
+		}
+
+		h1 {
+			margin-right: 2rem
+		}
 	}
 </style>
