@@ -87,7 +87,6 @@
 		.header {
 			display: flex;
 			align-items: baseline;
-			margin-bottom: 5rem;
 		}
 
 		h1 {

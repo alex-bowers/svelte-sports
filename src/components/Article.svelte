@@ -89,7 +89,7 @@
             margin-bottom: 0.875rem;
         }
         .article__text--title a {
-            font-size: 2.5rem;
+            font-size: 2rem;
             font-weight: 500;
         }
     }
